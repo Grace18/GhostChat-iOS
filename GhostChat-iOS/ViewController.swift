@@ -10,7 +10,7 @@ import UIKit
 import CoreBluetooth
 
 
-class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate {
+class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate, UITextFieldDelegate {
 
     // MARK: - Globals
     
@@ -47,8 +47,10 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
 
     @IBAction func sendButtonPressed(sender: UIButton) {
         advertiseNewName(myTextField.text)
-
-    }
+        
+        
+}
+    
     
     @IBAction func refreshPressed(sender: UIButton) {
         myCentralManager.stopScan()
@@ -56,6 +58,12 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         startScanning()
         
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        myTextField.resignFirstResponder()
+        return false
+    }
+
     
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
