@@ -60,7 +60,7 @@
 		6C7849031AED4DD50054DBED = {
 			isa = PBXGroup;
 			children = (
-				6C78490E1AED4DD50054DBED /* GhostChat-iOS */,
+				6C78490E1AED4DD50054DBED /* Incognito */,
 				6C7849241AED4DD50054DBED /* GhostChat-iOSTests */,
 				6C78490D1AED4DD50054DBED /* Products */,
 			);
@@ -75,7 +75,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C78490E1AED4DD50054DBED /* GhostChat-iOS */ = {
+		6C78490E1AED4DD50054DBED /* Incognito */ = {
 			isa = PBXGroup;
 			children = (
 				6C7849111AED4DD50054DBED /* AppDelegate.swift */,
@@ -85,6 +85,7 @@
 				6C78491A1AED4DD50054DBED /* LaunchScreen.xib */,
 				6C78490F1AED4DD50054DBED /* Supporting Files */,
 			);
+			name = Incognito;
 			path = "GhostChat-iOS";
 			sourceTree = "<group>";
 		};
