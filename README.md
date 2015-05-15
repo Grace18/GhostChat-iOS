@@ -20,6 +20,8 @@
 ## Landscape Mode
 ![ScreenShot](https://github.com/Grace18/GhostChat-iOS/blob/master/Screen%20Shot%202015-05-07%20at%205.53.47%20PM.png) 
 
+<IMG Incognito.gif
+
 
 # Code Runs On:
 + iOS 8.3+
