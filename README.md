@@ -10,7 +10,8 @@
 
  1. Designed user interface
  2. Toogle between Portrait and Landscape mode
-  ![Demo](file:///Users/jituboha/Downloads/Incognito.gif)
+
+![Demo](file:///Users/jituboha/Downloads/Incognito.gif)
 
 
 # Screen Shot
