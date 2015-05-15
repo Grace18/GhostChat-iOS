@@ -1,13 +1,14 @@
 ## GhostChat-iOS
 1. Tagline: "Club Chat" 
 
-Added ReadMe for Forking Example
-Designed user interface
 
-"Ghost Local Chat"
-Works in Airplane Mode
-Uses Blutooth
-Digital Wireframe for INCOGNITO
+
+## Works in Airplane Mode
+## Uses Blutooth
+## Digital Wireframe for INCOGNITO
+
+1. Added ReadMe for Forking Example
+2. Designed user interface
 
 
 # Screen Shot
