@@ -7,8 +7,9 @@
 ### Uses Bluetooth
 ### Digital Wireframe for INCOGNITO
 
-1. Added ReadMe for Forking Example
-2. Designed user interface
+
+ Designed user interface
+ Toogle between Portrait and Landscape mode
 
 
 # Screen Shot
