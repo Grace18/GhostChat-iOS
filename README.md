@@ -8,8 +8,8 @@
 ### Digital Wireframe for INCOGNITO
 
 
- Designed user interface
- Toogle between Portrait and Landscape mode
+ 1. Designed user interface
+ 2. Toogle between Portrait and Landscape mode
 
 
 # Screen Shot
