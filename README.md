@@ -3,9 +3,9 @@
 
 
 
-## Works in Airplane Mode
-## Uses Blutooth
-## Digital Wireframe for INCOGNITO
+### Works in Airplane Mode
+### Uses Bluetooth
+### Digital Wireframe for INCOGNITO
 
 1. Added ReadMe for Forking Example
 2. Designed user interface
