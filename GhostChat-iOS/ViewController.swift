@@ -22,6 +22,8 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
     // A newly generated UUID for Peripheral
     var uuid = NSUUID()
     
+    var toggleRSSI: NSNumber! = -40
+    
     
     // Chat Array
     var fullChatArray = [("","", "", "")]
@@ -64,6 +66,20 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         return false
     }
 
+    
+    @IBOutlet weak var toggleSwitch: UISwitch!
+    
+    @IBAction func distanceToggle(sender: UIButton) {
+        
+        if sender.enabled{
+            toggleRSSI = -60
+
+        }else{
+            toggleRSSI = -40
+        }
+    
+    
+    }
     
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
@@ -322,12 +338,17 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         let prefixString = "Ghost"
         //   let localNameKey = advertisementData[CBAdvertisementDataLocalNameKey]
         
+        if toggleRSSI.intValue >= -50 {
+        
+        
         if let localNameKey: AnyObject = advertisementData[CBAdvertisementDataLocalNameKey]  {
             
             myNameString = localNameKey as! String
             var myTuple = (myUUIDString, myRSSIString, "\(myNameString)", "\(myMessageString)" )
+            var toggleBool = toggleSwitch.enabled
             
-            if myNameString!.hasPrefix(prefixString) || myNameString!.hasPrefix("GC") {
+            
+            if myNameString!.hasPrefix(prefixString) || myNameString!.hasPrefix("GC") && toggleBool {
                 myTuple.2 = myTuple.2
                 chatDictionary[myTuple.0] = myTuple
                 
@@ -348,6 +369,42 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
                 
                 return
                 
+            }
+        }
+        }
+
+        if toggleRSSI.intValue < -50 {
+            
+            
+            if let localNameKey: AnyObject = advertisementData[CBAdvertisementDataLocalNameKey]  {
+                
+                myNameString = localNameKey as! String
+                var myTuple = (myUUIDString, myRSSIString, "\(myNameString)", "\(myMessageString)" )
+                var toggleBool = toggleSwitch.enabled
+                
+                
+                if myNameString!.hasPrefix(prefixString) || myNameString!.hasPrefix("GC") && toggleBool {
+                    myTuple.2 = myTuple.2
+                    chatDictionary[myTuple.0] = myTuple
+                    
+                    // Clean Array
+                    fullChatArray.removeAll(keepCapacity: false)
+                    
+                    // Tranfer Dictionary to Array
+                    for eachItem in chatDictionary{
+                        fullChatArray.append(eachItem.1)
+                    }
+                    
+                    // Sort Array by RSSI
+                    //from http://www.andrewcbancroft.com/2014/08/16/sort-yourself-out-sorting-an-array-in-swift/
+                    cleanAndSortedChatArray = sorted(fullChatArray,{
+                        (str1: (String,String,String,String) , str2: (String,String,String,String) ) -> Bool in
+                        return str1.1.toInt() > str2.1.toInt()
+                    })
+                    
+                    return
+                    
+                }
             }
         }
         
