@@ -18,7 +18,7 @@
 ## Loading screen
 ![ScreenShot](https://github.com/Grace18/GhostChat-iOS/blob/master/Screen%20Shot%202015-05-07%20at%204.46.04%20PM.png)
 ## Portrait Mode
-![ScreenShot](https://github.com/Grace18/GhostChat-iOS/blob/master/Screen%20Shot%202015-05-07%20at%205.53.50%20PM.png)
+![ScreenShot](https://github.com/Grace18/GhostChat-iOS/blob/master/Screen%20Shot%202015-05-14%20at%2011.39.52%20PM.png)
 ## Landscape Mode
 ![ScreenShot](https://github.com/Grace18/GhostChat-iOS/blob/master/Screen%20Shot%202015-05-07%20at%205.53.47%20PM.png) 
 
