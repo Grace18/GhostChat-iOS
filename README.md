@@ -1,5 +1,5 @@
 ## GhostChat-iOS
-1. Tagline: "Club Chat" 
+ Tagline: "Club Chat" 
 
 
 
@@ -7,11 +7,12 @@
 ### Uses Bluetooth
 ### Digital Wireframe for INCOGNITO
 
-
  1. Designed user interface
  2. Toogle between Portrait and Landscape mode
 
+
 ![Demo](https://github.com/Grace18/GhostChat-iOS/blob/master/Incognito.gif) 
+
 
 # Screen Shot
 ## Loading screen
