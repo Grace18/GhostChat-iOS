@@ -11,7 +11,6 @@
  1. Designed user interface
  2. Toogle between Portrait and Landscape mode
 
-<IMG (file:///Users/jituboha/Downloads/Incognito.gif)
 
 
 # Screen Shot
@@ -22,7 +21,7 @@
 ## Landscape Mode
 ![ScreenShot](https://github.com/Grace18/GhostChat-iOS/blob/master/Screen%20Shot%202015-05-07%20at%205.53.47%20PM.png) 
 
-
+![Demo](https://github.com/Grace18/GhostChat-iOS/blob/master/Incognito.gif) 
 
 
 # Code Runs On:
